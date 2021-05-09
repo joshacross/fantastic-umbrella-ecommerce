@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
+const { Product } = require('./index.js');
 
 class Category extends Model {}
 
@@ -17,10 +18,17 @@ Category.init(
           // turn on auto increment
           autoIncrement: true
       },
-      // define username
+      // define category_name
       category_name: {
           type: DataTypes.STRING,
           allowNull: false
+      },
+      product_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: Product,
+          key: 'id'
+        }
       }
     },
   {
