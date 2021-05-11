@@ -30,7 +30,7 @@ Product.init(
       validate: {
         isDecimal: true
       }
-    }
+    },
 
     stock: {
       type: DataTypes.INTEGER,
@@ -39,7 +39,7 @@ Product.init(
       validate: {
         isNumeric: true,
       }
-    }  
+    },  
 
     category_id: {
       type: DataTypes.INTEGER,
