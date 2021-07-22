@@ -1,4 +1,12 @@
-# fantastic-umbrella-ecommerce
+# Fastastic Umbrella E-Commerce
+
+Fantastic Umbrella E-Commerce is a fully responsive e-commerce store that uses mySQL, Sequelize, and Express.js for it's backend and performs api calls to cover creating, deleting, reading, and updating products in the database. 
+
+## Languages
+* Javascript
+* mySQL
+* Sequelize
+* 
 
 * mysql2
 * Sequalize
