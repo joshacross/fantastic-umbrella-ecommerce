@@ -6,7 +6,6 @@ Fantastic Umbrella E-Commerce is a fully responsive e-commerce store that uses m
 * Javascript
 * mySQL
 * Sequelize
-* 
 
 ## Description
 Fantastic Umbrella Ecommerce is an internet retail Ecommerce backend using Express.js API that configures to sequelize to interact with MySQL Database. 
@@ -43,3 +42,4 @@ Fantastic Umbrella Ecommerce is an internet retail Ecommerce backend using Expre
 * Once database has been seeded, npm start and a local instance will start at port localhost:3001.
 * CRUD operations are handled at localhost:3001/api/
 * Insomnia Core and CRUD demo coming soon.
+
