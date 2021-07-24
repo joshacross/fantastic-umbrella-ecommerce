@@ -175,4 +175,4 @@ router.delete('/:id', (req, res) => {
   });
 });
 
-module.exports = { Product };
+module.exports = router;
