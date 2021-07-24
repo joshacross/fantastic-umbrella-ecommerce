@@ -41,4 +41,5 @@ Fantastic Umbrella Ecommerce is an internet retail Ecommerce backend using Expre
 * Once your packages have finished installing, type `npm run seeds/index.js`
 * Sequelize with link to your MySQL, create models, and import seeds data.
 * Once database has been seeded, npm start and a local instance will start at port localhost:3001.
-* CRUD operations are handled at localhost:3001/api
+* CRUD operations are handled at localhost:3001/api/
+* Insomnia Core and CRUD demo coming soon.
