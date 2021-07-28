@@ -8,24 +8,7 @@ const sequelize = require('../../config/connection');
 // find all products
 router.get('/', (req, res) => {
   Product.findAll({
-    // define product attributes
-    attributes: ['id', 'product_name', 'price', 'stock'],
-    // Include associated category and tag data
-    include: [
-      {
-        model: Category,
-      },
-      {
-        model: ProductTag
-      },
-      {
-        model: Tag,
-        where: {
-          tag_id: req.body.tag_id
-        },
-        attributes: ['tag_name']
-      }
-    ]
+    include: [Category, ProductTag]
   })
   .then(dbProductData => res.json(dbProductData))
   .catch(err => {
@@ -41,25 +24,9 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'product_name', 'price', 'stock'],
-    // Include associated category and tag data
-    include: [
-      {
-        model: Category,
-        attributes: ['category_id']
-      },
-      {
-        model: ProductTag,
-        attributes: ['tag_id']
-      },
-      {
-        model: Tag,
-        where: {
-          tag_id: req.body.tag_id
-        },
-        attributes: ['tag_name']
-      }
-    ]
+
+    include: [ Category, ProductTag ]
+
   })
   .then(dbProductData => {
     if (!dbProductData) {
