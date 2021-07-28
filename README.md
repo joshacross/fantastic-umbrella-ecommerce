@@ -3,7 +3,8 @@
 ## Description
 Fantastic Umbrella E-Commerce is an ecommerce mySQL backend that uses object relational mapping with Sequelize to limit writing queries to the database. It's built on Node.js using Express.js for api calls to create, read, update, and delete (CRUD) products, product tags, tags, and categories.
 
-## Video Walkthrough (Coming Soon)
+## Video Walkthrough
+https://www.loom.com/share/550a9430de1d43cb9e4ac8600f59f451 
 
 ## Languages
 * mysql2
